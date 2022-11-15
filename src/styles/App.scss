@@ -20,6 +20,8 @@ a {
   }
 }
 
+$assetsUrl: '../assets';
+
 // Color Variables
 $green: #3c735f;
 $yellow: #f2cb05;
@@ -36,9 +38,9 @@ $gray: #1b1b1b;
 $gray-90: rgba(75, 75, 75, 0.9);
 
 // Media Variables
-$tablet-size: "min-width: 481px";
-$notebook-size: "min-width: 1025px";
-$desktop-size: "min-width: 2561px";
+$tablet-size: "min-width: 425px";
+$notebook-size: "min-width: 769px";
+$desktop-size: "min-width: 1025px";
 
 @import '../components/Header/Header';
 @import '../components/Hello/Hello';

@@ -64,6 +64,167 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   font-size: 1.25rem;
 }
 
+.hello-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  align-items: center;
+  justify-items: center;
+  padding: 0 1rem;
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+  background-color: #141414;
+  color: #dadada;
+}
+.hello-container .art-wp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  order: 1;
+}
+.hello-container .art-wp #blob-bg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22rem;
+  height: 19rem;
+  background: url(../assets/blob.svg);
+  background-size: 33rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.hello-container .art-wp #chibi-img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 69%;
+  left: 57%;
+  width: 21rem;
+}
+.hello-container .art-wp .react-bg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  top: 5.4rem;
+  left: 2.9rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #1b1b1b;
+}
+.hello-container .art-wp .react-bg #react-logo {
+  position: absolute;
+  width: 2.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hello-container .art-wp .css-bg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  top: 44%;
+  left: 2%;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: #e3622b;
+}
+.hello-container .art-wp .css-bg img {
+  width: 69%;
+  transform: translateY(0.1rem);
+}
+.hello-container .art-wp .html-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 63%;
+  left: 4.7%;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: rgb(10, 61, 173);
+}
+.hello-container .art-wp .html-bg img {
+  width: 59%;
+  transform: translateY(0.1rem);
+}
+.hello-container .art-wp .sass-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 18%;
+  left: 46%;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background-color: #DC84AE;
+}
+.hello-container .art-wp .sass-bg img {
+  width: 72%;
+  /* transform: translateY(0.1rem); */
+}
+.hello-container .art-wp .js-bg {
+  position: absolute;
+  top: 18.5%;
+  left: 28%;
+  width: 3.2rem;
+}
+.hello-container .art-wp .js-bg img {
+  width: 100%;
+}
+.hello-container .hello-text {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 30rem;
+  max-width: 100%;
+  align-items: center;
+}
+.hello-container .hello-text span {
+  font-size: 1.5rem;
+}
+.hello-container .hello-text .my-name {
+  display: flex;
+}
+.hello-container .hello-text .my-name h2 {
+  font-size: 3.5rem;
+}
+.hello-container .hello-text .my-name h2:last-child {
+  color: #4276E9;
+}
+.hello-container .hello-text .buttons {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  width: 100%;
+  margin-top: 1.75rem;
+}
+.hello-container .hello-text .buttons button {
+  width: 10rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #dadada;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.hello-container .hello-text .buttons button:first-child {
+  background-color: #4276E9;
+  /* filter: brightness(1.4); */
+  border: 2px solid #4276E9;
+}
+.hello-container .hello-text .buttons button:last-child {
+  background-color: transparent;
+  border: 2px solid #dadada;
+  margin-left: 1rem;
+}
+
 .about-me-container {
   display: flex;
   flex-direction: column;
@@ -145,6 +306,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: -moz-max-content;
   width: max-content;
   height: 100%;
+  z-index: 1;
 }
 .menu-button-container section {
   position: absolute;

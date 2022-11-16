@@ -392,6 +392,63 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   margin-left: 1rem;
 }
 
+.technologies-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+  background-color: #141414;
+  color: #dadada;
+}
+.technologies-container .tech-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.25rem;
+  width: 30rem;
+  max-width: 100%;
+}
+.technologies-container .tech-title h2 {
+  font-size: 3rem;
+}
+.technologies-container .tech-title span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4276E9;
+}
+.technologies-container .tech-title span:nth-of-type(1) {
+  margin-right: 0.25rem;
+}
+.technologies-container .tech-title span:nth-of-type(2) {
+  margin-left: 0.25rem;
+}
+.technologies-container .techs-wrapper {
+  width: clamp(15rem, 80rem, 100vw);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.technologies-container .techs-wrapper .tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  min-width: 2rem;
+  font-weight: 700;
+}
+.technologies-container .techs-wrapper .tech-card img {
+  width: 100%;
+}
+.technologies-container .techs-wrapper .tech-card img#js-img {
+  width: 5.5rem;
+  margin: 1.1rem 0;
+}
+
 .menu-button-container {
   position: relative;
   display: flex;

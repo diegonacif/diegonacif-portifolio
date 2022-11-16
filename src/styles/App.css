@@ -297,6 +297,101 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   }
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+  height: calc(100vh - 3.5rem);
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  background-color: #141414;
+  color: #dadada;
+}
+.projects-container .projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.25rem;
+  width: 30rem;
+  max-width: 100%;
+}
+.projects-container .projects-title h2 {
+  font-size: 3rem;
+}
+.projects-container .projects-title span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4276E9;
+}
+.projects-container .projects-title span:nth-of-type(1) {
+  margin-right: 0.25rem;
+}
+.projects-container .projects-title span:nth-of-type(2) {
+  margin-left: 0.25rem;
+}
+.projects-container .cards-wrapper {
+  display: flex;
+  justify-content: start;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  overflow: scroll;
+}
+
+.projects-cards-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 13rem auto 4rem;
+  align-items: center;
+  justify-items: center;
+  width: 20rem;
+  height: 28rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: #1b1b1b;
+  color: #dadada;
+}
+.projects-cards-container img {
+  width: 100%;
+  height: 12rem;
+  background-color: burlywood;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 0.25rem;
+}
+.projects-cards-container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.projects-cards-container .buttons button {
+  width: 8rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: var(--white);
+  /* font-weight: bold; */
+  font-size: 0.75rem;
+}
+.projects-cards-container .buttons button:first-child {
+  background-color: #4276E9;
+  /* filter: brightness(1.4); */
+  border: 2px solid #4276E9;
+}
+.projects-cards-container .buttons button:last-child {
+  background-color: transparent;
+  border: 2px solid #dadada;
+  margin-left: 1rem;
+}
+
 .menu-button-container {
   position: relative;
   display: flex;

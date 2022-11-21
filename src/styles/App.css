@@ -596,7 +596,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .menu-button-container section .menu-item a {
   display: grid;
-  grid-template-columns: 2.25rem 1fr;
+  grid-template-columns: 2.5rem 1fr;
   align-items: center;
   width: 100%;
   font-size: 1.125rem;

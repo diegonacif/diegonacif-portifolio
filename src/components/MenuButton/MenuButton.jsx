@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'; // Outside Click (Hook)
 import { useTransition, animated } from '@react-spring/web'; // Conditional Rendering Transition Lib
 import { Twirl as Hamburguer } from 'hamburger-react';  // Hamburguer Menu Button with Animation
+import { UserList, Briefcase, Code, PhoneCall } from 'phosphor-react';
 
 import '../../styles/App.css';
 
@@ -53,16 +54,28 @@ export const MenuButton = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               <div className="menu-item">
-                <Link to="/about-me">Sobre</Link>
+                <Link to="/about-me">
+                  <UserList size={30} color="#dadada" weight="duotone" />
+                  <span>Sobre</span>
+                </Link>
               </div>
               <div className="menu-item">
-                <Link to="/projects">Projetos</Link>
+                <Link to="/projects">
+                <Briefcase size={30} color="#dadada" weight="duotone" />
+                <span>Projetos</span>
+                </Link>
               </div>
               <div className="menu-item">
-                <Link to="/technologies">Tecnologias</Link>
+                <Link to="/technologies">
+                  <Code size={30} color="#dadada" weight="duotone" />
+                  <span>Tecnologias</span>
+                </Link>
               </div>
               <div className="menu-item">
-                <Link to="/contact">Contato</Link>
+                <Link to="/contact">
+                  <PhoneCall size={30} color="#dadada" weight="duotone" />
+                  <span>Contato</span>
+                </Link>
               </div>
             </animated.section>
         )

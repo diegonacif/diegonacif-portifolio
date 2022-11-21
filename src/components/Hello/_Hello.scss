@@ -1,3 +1,5 @@
+// @include rotateAnimation;
+
 .hello-container {
   display: grid;
   grid-template-columns: 100%;
@@ -51,6 +53,9 @@
       height: 3rem;
       background-color: $gray;
 
+      -webkit-animation: rotate-center 10s linear infinite ;
+      animation: rotate-center 10s linear infinite ;
+
       #react-logo {
         position: absolute;
         width: 2.5rem;
@@ -71,7 +76,7 @@
       width: 2.9rem;
       height: 2.9rem;
       border-radius: 50%;
-      background-color: #e3622b;
+      background-color: #ec7b4a;
 
       img {
         width: 69%;
@@ -89,7 +94,7 @@
       width: 2.9rem;
       height: 2.9rem;
       border-radius: 50%;
-      background-color: rgb(10, 61, 173);
+      background-color: #2b5eca;
 
       img {
         width: 59%;
@@ -123,6 +128,20 @@
 
       img {
         width: 100%;
+      }
+    }
+
+    .github-bg {
+      position: absolute;
+      top: 20.5%;
+      left: 63%;
+      width: 2.9rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      background-color: #f7f2f2;
+
+      img {
+        height: 100%;
       }
     }
   }

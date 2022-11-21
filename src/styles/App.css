@@ -18,6 +18,44 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-color: transparent;
 }
 
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: rgba(8, 80, 235, 0.98);
+  }
+  50% {
+    background: rgba(39, 20, 163, 0.98);
+  }
+  100% {
+    background: rgba(57, 21, 142, 0.98);
+  }
+}
+@keyframes color-change-3x {
+  0% {
+    background: rgba(8, 80, 235, 0.98);
+  }
+  50% {
+    background: rgba(39, 20, 163, 0.98);
+  }
+  100% {
+    background: rgba(57, 21, 142, 0.98);
+  }
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -112,6 +150,8 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 3rem;
   height: 3rem;
   background-color: #1b1b1b;
+  -webkit-animation: rotate-center 10s linear infinite;
+  animation: rotate-center 10s linear infinite;
 }
 .hello-container .art-wp .react-bg #react-logo {
   position: absolute;
@@ -131,7 +171,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 2.9rem;
   height: 2.9rem;
   border-radius: 50%;
-  background-color: #e3622b;
+  background-color: #ec7b4a;
 }
 .hello-container .art-wp .css-bg img {
   width: 69%;
@@ -147,7 +187,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 2.9rem;
   height: 2.9rem;
   border-radius: 50%;
-  background-color: rgb(10, 61, 173);
+  background-color: #2b5eca;
 }
 .hello-container .art-wp .html-bg img {
   width: 59%;
@@ -177,6 +217,18 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 .hello-container .art-wp .js-bg img {
   width: 100%;
+}
+.hello-container .art-wp .github-bg {
+  position: absolute;
+  top: 20.5%;
+  left: 63%;
+  width: 2.9rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #f7f2f2;
+}
+.hello-container .art-wp .github-bg img {
+  height: 100%;
 }
 .hello-container .hello-text {
   order: 2;
@@ -522,7 +574,6 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   align-items: center;
   justify-content: center;
   width: 9rem;
-  background-color: rgba(34, 95, 230, 0.97);
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -530,6 +581,8 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   right: 2.8rem;
   padding: 1rem 0.5rem;
   border-radius: 4px;
+  -webkit-animation: color-change-3x 9s linear infinite alternate both;
+  animation: color-change-3x 9s linear infinite alternate both;
 }
 .menu-button-container section .menu-item {
   width: 100%;

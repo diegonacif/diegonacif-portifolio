@@ -4,6 +4,7 @@ import jsLogo from '../../assets/js-round-logo.png';
 import htmlLogo from '../../assets/html5-logo.png';
 import cssLogo from '../../assets/css3-logo.png';
 import sassLogo from '../../assets/sass-logo.png';
+import gitLogo from '../../assets/github-logo.svg';
 
 import '../../styles/App.css';
 
@@ -42,6 +43,9 @@ export const Hello = () => {
           </div>
           <div className="sass-bg">
             <img src={sassLogo} alt="sass logo" />
+          </div>
+          <div className="github-bg">
+            <img src={gitLogo} alt="github logo" />
           </div>
           
         </div>

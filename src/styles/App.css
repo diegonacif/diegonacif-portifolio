@@ -120,6 +120,12 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   height: 100%;
   order: 1;
 }
+.hello-container .art-wp #sparkle {
+  position: absolute;
+  top: 12.675rem;
+  left: 10rem;
+  width: 0.75rem;
+}
 .hello-container .art-wp #blob-bg {
   position: relative;
   top: 50%;

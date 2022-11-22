@@ -18,6 +18,16 @@
     height: 100%;
     order: 1;
 
+    #sparkle {
+      position: absolute;
+      top: 12.675rem;
+      left: 10rem;
+      width: 0.75rem;
+      
+      // -webkit-animation: sparkling 1.5s linear infinite ;
+      // animation: sparkling 1.5s linear infinite ;
+    }
+
     #blob-bg {
       position: relative;
       top: 50%;

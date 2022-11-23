@@ -3,13 +3,13 @@ import api from '../../services/api';
 
 import '../../styles/App.css';
 
-export const ProjectsCards = ({ repoId }) => {
+export const ProjectsCards = ({ repoId, imgSrc }) => {
   const [repo, setRepo] = useState([]);
 
   useEffect(() => {
     async function getRepository() {
       await api
-        .get(`/repos`)
+        .get(`/repos?per_page=100`)
         .then((response) => setRepo(response.data[repoId]))
         .catch((err) => {
           console.error("ops! ocorreu um erro" + err);
@@ -22,12 +22,13 @@ export const ProjectsCards = ({ repoId }) => {
 
     return (
       <div className="projects-cards-container">
-        <img src="#" alt="#" />
+        <div className="img-wrapper">
+          <img src={imgSrc} alt="#" />
+        </div>
         <span>{repo.name}</span>
-        <span>{repo.created_at}</span>
-        <span>{repo.updated_at}</span>
+        <span>{repo.description}</span>
         <div className="buttons">
-          <button>VER O SITE</button>
+          <button onClick={() => window.open(`${repo.homepage}`)}>VER O SITE</button>
           <button onClick={() => window.open(`${repo.html_url}`)}>GITHUB</button>
         </div>
       </div>

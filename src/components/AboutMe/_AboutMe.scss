@@ -70,7 +70,7 @@
     grid-template-columns: 60% 40%;
     align-items: center;
     justify-items: center;
-    padding: 0;
+    padding: 0 4rem;
 
     section {
       width: 30rem;
@@ -78,6 +78,10 @@
 
     .my-photo {
       margin: 0;
+    }
+
+    @media only screen and ($desktop-size) {
+      padding: 0 calc(6rem + 6vw);
     }
 
   }

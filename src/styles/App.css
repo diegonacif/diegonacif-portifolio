@@ -282,6 +282,21 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   border: 2px solid #dadada;
   margin-left: 1rem;
 }
+@media only screen and (min-width: 1024px) {
+  .hello-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+  }
+  .hello-container .art-wp {
+    order: 2;
+  }
+  .hello-container .art-wp #blob-bg {
+    transform: translate(-50%, -60%);
+  }
+  .hello-container .hello-text {
+    order: 1;
+  }
+}
 
 .about-me-container {
   display: flex;
@@ -342,7 +357,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   background-position: center center;
   margin-top: 4rem;
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .about-me-container {
     display: grid;
     grid-template-columns: 60% 40%;

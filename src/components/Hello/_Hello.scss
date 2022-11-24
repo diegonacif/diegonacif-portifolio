@@ -1,5 +1,3 @@
-// @include rotateAnimation;
-
 .hello-container {
   display: grid;
   grid-template-columns: 100%;
@@ -23,9 +21,6 @@
       top: 12.675rem;
       left: 10rem;
       width: 0.75rem;
-      
-      // -webkit-animation: sparkling 1.5s linear infinite ;
-      // animation: sparkling 1.5s linear infinite ;
     }
 
     #blob-bg {
@@ -209,6 +204,23 @@
         }
         
       }
+    }
+  }
+
+  @media only screen and ($notebook-size) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+
+    .art-wp {
+      order: 2;
+      
+      #blob-bg {
+        transform: translate(-50%, -60%);
+      }
+    }
+
+    .hello-text {
+      order: 1;
     }
   }
 }

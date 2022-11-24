@@ -6,13 +6,15 @@ export function useBreakpoint() {
 
   const [currentBreakpoint, setCurrentBreakpoint] = useState('');
 
+  console.log(currentBreakpoint);
+
   useEffect(() => {
-    if (size.width < 425) {
+    if (size.width >= 320 && size.width < 600 ) {
       return setCurrentBreakpoint('mobile')
-    } else if (size.width < 768) {
+    } else if (size.width >= 600 && size.width < 1024) {
       return setCurrentBreakpoint('tablet')
-    } else if (size.width < 1024) {
-      return setCurrentBreakpoint('laptop')
+    } else if (size.width >= 1024 && size.width < 1280) {
+      return setCurrentBreakpoint('notebook')
     } else {
       return setCurrentBreakpoint('desktop')
     }

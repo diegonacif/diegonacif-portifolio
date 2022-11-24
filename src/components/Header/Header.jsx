@@ -18,12 +18,12 @@ export const Header = () => {
       </Link>
 
       {
-        breakpoint === 'laptop' || breakpoint === 'desktop' ?
+        breakpoint === 'notebook' || breakpoint === 'desktop' ?
         <div className="menus">
-          <Link to="/about-me">About Me</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/technologies">Technologies</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about-me">Sobre mim</Link>
+          <Link to="/projects">Projetos</Link>
+          <Link to="/technologies">Tecnologias</Link>
+          <Link to="/contact">Contato</Link>
         </div> :
         <MenuButton />
       }

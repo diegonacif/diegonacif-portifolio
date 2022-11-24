@@ -20,26 +20,45 @@ export const Contact = () => {
           </div>
           <div className="contact-icons">
             <IconContext.Provider value={{ className: "global-react-icons" }}>
-              <FaLinkedin 
+              <div 
+                className="contact-button"
                 onClick={() => window.open('https://www.linkedin.com/in/diego-nacif/')}
-                title="LinkedIn"
-              />
-              <FaGithub 
-                onClick={() => window.open('https://github.com/diegonacif')} 
-                title="Github" 
-              />
-              <FaTelegram
+              >
+                <FaLinkedin title="LinkedIn" />
+                <span>LinkedIn</span>
+              </div>
+
+              <div 
+                className="contact-button"
+                onClick={() => window.open('https://github.com/diegonacif')}
+              >
+                <FaGithub title="Github" />
+                <span>Github</span>
+              </div>
+
+              <div 
+                className="contact-button"
                 onClick={() => window.open('https://t.me/DiegoNacif')}
-                title="Telegram"
-              />
-              <IoLogoWhatsapp 
+              >
+                <FaTelegram title="Telegram" />
+                <span>Telegram</span>
+              </div>
+              
+              <div 
+                className="contact-button"
                 onClick={() => window.open('https://wa.me/5584991751476')}
-                title="Whatsapp"
-              />
-              <ImMail 
+              >
+                <IoLogoWhatsapp title="Whatsapp" />
+                <span>Whatsapp</span>
+              </div>
+
+              <div 
+                className="contact-button"
                 onClick={() => window.open('mailto:diegoreisnacif@gmail.com?subject="Contato LandingPage"')}
-                title="Mail"
-              />
+              >
+                <ImMail title="Mail" />
+                <span>E-mail</span>
+              </div>
             </IconContext.Provider>
           </div>
         </div>

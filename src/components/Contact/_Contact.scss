@@ -34,33 +34,60 @@
   }
 
   .contact-body {
-    // display: flex;
+    width: 100%;
     .contact-text {
-      margin-top: 3rem;
+      // margin-top: 3rem;
       font-size: 1.25rem;
-      text-align: justify;
+      text-align: center;
     }
   
     .contact-icons {
       display: flex;
-      justify-content: space-evenly;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
       margin-top: 3rem;
+
+      .contact-button {
+        display: grid;
+        grid-template-columns: 3.25rem auto;
+        justify-items: center;
+        align-items: center;
+        width: 9rem;
+        height: 3.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        -webkit-animation: color-change-3x 9s linear infinite alternate both;
+              animation: color-change-3x 9s linear infinite alternate both;
+      }
   
       .global-react-icons {
         vertical-align: middle;
         width: 2.5rem;
         height: 2.5rem;
-        color: $blue;
+        color: $white;
         transition: color 0.1s, transform 0.1s;
-        
-        &:hover {
-          cursor: pointer;
-          color: $light-blue;
-          transform: scale(1.1);
-          transition: color 0.2s, transform 0.2s;
-        }
       }
     }
   }
 
+  @media only screen and ($tablet-size) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and ($notebook-size) {
+    padding: 0 4rem;
+    .contact-button:hover {
+      outline: 1px solid #ffffff2f;
+    }
+    .contact-button:hover .global-react-icons {
+      transform: scale(1.1);
+      transition: color 0.2s, transform 0.2s;
+    }
+  }
+
+  @media only screen and ($desktop-size) {
+    padding: 0 calc(6rem + 5vw);
+  }
 }

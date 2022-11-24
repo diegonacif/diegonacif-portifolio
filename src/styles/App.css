@@ -101,6 +101,21 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   gap: 1rem;
   font-size: 1.25rem;
 }
+@media only screen and (min-width: 600px) {
+  .header-container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-container {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header-container {
+    padding: 0 calc(6rem + 6vw);
+  }
+}
 
 .hello-container {
   display: grid;
@@ -367,6 +382,9 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   }
   .about-me-container section {
     width: 30rem;
+  }
+  .about-me-container .my-photo {
+    margin: 0;
   }
 }
 

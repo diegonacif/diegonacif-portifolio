@@ -321,6 +321,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   width: 100vw;
   height: calc(100vh - 3.5rem);
   padding: 4.5rem 1rem 0;
+  min-height: 44rem;
   background-color: #141414;
   color: #dadada;
 }
@@ -365,6 +366,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 .about-me-container .my-photo {
   width: 17rem;
   height: 17rem;
+  min-height: 17rem;
   border-radius: 50%;
   background: url(../assets/justMe.png);
   background-size: cover;

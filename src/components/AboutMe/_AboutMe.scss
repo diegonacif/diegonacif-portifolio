@@ -7,6 +7,7 @@
   width: 100vw;
   height: calc(100vh - 3.5rem);
   padding: 4.5rem 1rem 0;
+  min-height: 44rem;
 
   background-color: $black;
   color: $white;
@@ -57,6 +58,7 @@
   .my-photo {
     width: 17rem;
     height: 17rem;
+    min-height: 17rem;
     border-radius: 50%;
     background: url(#{$assetsUrl}/justMe.png);
     background-size: cover;
@@ -83,6 +85,8 @@
     @media only screen and ($desktop-size) {
       padding: 0 calc(6rem + 5vw);
     }
+
+    
 
   }
 }

@@ -6,7 +6,7 @@
   justify-items: center;
   width: 100vw;
   height: calc(100vh - 3.5rem);
-  min-height: max-content;
+  min-height: 38rem;
   background-color: $black;
   color: $white;
 
@@ -47,14 +47,15 @@
     height: 100%;
     padding: 0 2rem;
 
-    overflow: scroll;
+    overflow: auto;
   }
 
   @media only screen and ($notebook-size) {
+    padding-bottom: 2rem;
     .cards-wrapper {
       justify-content: center;
       flex-wrap: wrap;
-      padding: 0 4rem;
+      padding: 0 4rem
     }
   }
 

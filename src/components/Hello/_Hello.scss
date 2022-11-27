@@ -7,6 +7,7 @@
   padding: 0 1rem;
   width: 100vw;
   height: calc(100vh - 3.5rem);
+  min-height: 44rem;
   background-color: $black;
   color: $white;
 
@@ -210,6 +211,7 @@
   @media only screen and ($notebook-size) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100%;
+    min-height: 25rem;
 
     .art-wp {
       order: 2;

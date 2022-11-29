@@ -1,15 +1,12 @@
 .technologies-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
   width: 100vw;
-  height: calc(100vh - 3.5rem);
+  height: 100%;
+  min-height: calc(100vh - 3.5rem);
   background-color: $black;
   color: $white;
-
-  // padding-top: 4.5rem;
 
   .tech-title {
     display: flex;
@@ -18,6 +15,7 @@
     row-gap: 1.25rem;
     width: 30rem;
     max-width: 100%;
+    margin-top: 2rem;
 
     h2 {
       font-size: 3rem;
@@ -38,31 +36,54 @@
   }
 
   .techs-wrapper {
-    width: clamp(15rem, 80rem, 100vw);
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    row-gap: 2rem;
+    padding: 4rem 0;
 
     .tech-card {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-rows: 8rem 1.5rem;
+      row-gap: 1rem;
       align-items: center;
-      justify-content: center;
+      justify-items: center;
       width: 10rem;
-      height: 10rem;
+      height: max-content;
       min-width: 2rem;
       font-weight: 700;
+      
 
       img {
-        width: 100%;
+        height: 10rem;
 
-        &#js-img {
-          width: 5.5rem;
-          margin: 1.1rem 0;
-        }
+        &#html-img { height: 7.5rem; }
+        &#css-img { height: 7.6rem; }
+        &#js-img { height: 7.4rem; }
+        &#react-img { height: 7.4rem; }
+        &#sass-img { height: 7.2rem; }
+        &#styled-img { height: 7.1rem; }
+        &#ts-img { height: 7.4rem; }
       }
     }
   }
 
+  @media only screen and ($tablet-size) {
+    padding: 0 2rem;
+  }
 
+  @media only screen and ($notebook-size) {
+    display: grid;
+    grid-template-rows: 7rem auto;
+    align-items: center;
+    justify-items: center;
+    padding: 0 4rem;
+  }
+
+  @media only screen and ($desktop-size) {
+    padding: 0 calc(6rem + 5vw);
+  }
 }

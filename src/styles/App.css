@@ -525,13 +525,12 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
 }
 
 .technologies-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 20% 80%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
   width: 100vw;
-  height: calc(100vh - 3.5rem);
+  height: 100%;
+  min-height: calc(100vh - 3.5rem);
   background-color: #141414;
   color: #dadada;
 }
@@ -542,6 +541,7 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   row-gap: 1.25rem;
   width: 30rem;
   max-width: 100%;
+  margin-top: 2rem;
 }
 .technologies-container .tech-title h2 {
   font-size: 3rem;
@@ -558,27 +558,70 @@ a:focus-visible, a:focus-within, a:focus, a:active, a:target {
   margin-left: 0.25rem;
 }
 .technologies-container .techs-wrapper {
-  width: clamp(15rem, 80rem, 100vw);
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  row-gap: 2rem;
+  padding: 4rem 0;
 }
 .technologies-container .techs-wrapper .tech-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 8rem 1.5rem;
+  row-gap: 1rem;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
   width: 10rem;
-  height: 10rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   min-width: 2rem;
   font-weight: 700;
 }
 .technologies-container .techs-wrapper .tech-card img {
-  width: 100%;
+  height: 10rem;
+}
+.technologies-container .techs-wrapper .tech-card img#html-img {
+  height: 7.5rem;
+}
+.technologies-container .techs-wrapper .tech-card img#css-img {
+  height: 7.6rem;
 }
 .technologies-container .techs-wrapper .tech-card img#js-img {
-  width: 5.5rem;
-  margin: 1.1rem 0;
+  height: 7.4rem;
+}
+.technologies-container .techs-wrapper .tech-card img#react-img {
+  height: 7.4rem;
+}
+.technologies-container .techs-wrapper .tech-card img#sass-img {
+  height: 7.2rem;
+}
+.technologies-container .techs-wrapper .tech-card img#styled-img {
+  height: 7.1rem;
+}
+.technologies-container .techs-wrapper .tech-card img#ts-img {
+  height: 7.4rem;
+}
+@media only screen and (min-width: 600px) {
+  .technologies-container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .technologies-container {
+    display: grid;
+    grid-template-rows: 7rem auto;
+    align-items: center;
+    justify-items: center;
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .technologies-container {
+    padding: 0 calc(6rem + 5vw);
+  }
 }
 
 .contact-container {

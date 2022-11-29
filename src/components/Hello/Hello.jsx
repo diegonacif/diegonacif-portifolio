@@ -40,7 +40,7 @@ export const Hello = () => {
     <div className="hello-container">
       <div className="hello-text">
         <span>Olá, meu nome é</span>
-        <div className="my-name">
+        <div className="my-name" translate="no">
           <h2>Diego&nbsp;</h2>
           <h2>Nacif</h2>
         </div>

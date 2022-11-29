@@ -16,7 +16,7 @@ export const Technologies = () => {
         <h2>Tecnologias</h2>
         <span>&gt;</span>
       </header>
-      <section className="techs-wrapper">
+      <section className="techs-wrapper" translate="no">
         <div className="tech-card">
           <img src={htmlImg} alt="html5 logo" id="html-img" />
           <span>HTML5</span>

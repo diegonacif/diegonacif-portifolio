@@ -25,7 +25,7 @@ export const ProjectsCards = ({ repoId, imgSrc }) => {
         <div className="img-wrapper">
           <img src={imgSrc} alt="#" />
         </div>
-        <span>{repo.name}</span>
+        <span translate="no">{repo.name}</span>
         <span>{repo.description}</span>
         <div className="buttons">
           <button onClick={() => window.open(`${repo.homepage}`)}>VER O SITE</button>

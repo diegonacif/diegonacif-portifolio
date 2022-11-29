@@ -18,7 +18,7 @@ export const Contact = () => {
           <div className="contact-text">
             Entre em contato comigo através dos links abaixo, que terei prazer em responder.
           </div>
-          <div className="contact-icons">
+          <div className="contact-icons" translate="no">
             <IconContext.Provider value={{ className: "global-react-icons" }}>
               <div 
                 className="contact-button"
